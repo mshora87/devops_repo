@@ -9,5 +9,12 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-      - name: print welecom to screen
-        run: echo "Welecom to our first Github action"
+      - name: print welcome to the screen
+        run: echo "Welcome to our first Github action"
+
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: List Repo Files
+        run: ls -la
+         
