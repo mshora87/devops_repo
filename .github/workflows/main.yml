@@ -1,0 +1,13 @@
+name: MyWorkFlow
+
+on:
+  push:
+    branches:
+      - main  # or whichever branch you want to trigger on
+jobs:
+  example:
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: print welecom to screen
+        run: echo "Welecom to our first Github action"
